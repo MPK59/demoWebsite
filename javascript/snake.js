@@ -56,7 +56,7 @@
     ctx.fillRect(head.x * dx, head.y * dy, dx, dy);
     var segment = head, n = 0;
     while(segment = segment.next) {
-      ctx.fillStyle = brighten('#ED0E0E', 80 /** n++ / length*/);
+      ctx.fillStyle = brighten('#ED0E0E', 0 /** n++ / length*/);
       ctx.fillRect(segment.x * dx + 1, segment.y * dy + 1, dx - 2, dy - 2);
     }
     ctx.fillStyle = 'green';
