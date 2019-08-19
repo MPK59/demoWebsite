@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My webpage!</title>
+	<link rel="stylesheet" href="./styles/styles.css" />
+	<script async src="./javascript/snake.js"></script>
+  </head>
+  <body>
+    <h1>Hi, Cheese!</h1>
+    <h4 id='date'></h4>
+	<p>So, before I dive into &lsquo;finishing&rsquo; the game. I thought I would take some time out to show
+how to build the simple, raw unpolished, snakes mechanics using javascript and the HTML5
+<code>&lt;canvas&gt;</code> element.</p>
+
+<h2 id="snakes">Demo</h2>
+
+<p>Before I get started, here is the raw game itself in its simplest form. It&rsquo;s keyboard
+controlled so hit <code>&lt;space&gt;</code> to start the game and use the arrow keys to move the snake around.</p>
+
+<p><style>
+    #snake { position: relative; width: 660px; height: 495px; margin: 2em auto; border: 2px solid #666; background-color: #F9F281; }
+    #canvas { position: relative; width: 100%; height: 100%; }
+    #stats  { position: absolute; margin-left: -90px; }
+  </style></p>
+
+<p><div id="snake">
+    <canvas id="canvas">
+      Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
+    </canvas>
+  </div></p>
+
+<p><script src="./javascript/stats.js"></script>
+  <script src="./javscript/snake.js"></script></p>
+
+<blockquote>
+<p><em><code>&lt;space&gt;</code> to start, arrow keys to change direction</em></p>
+</blockquote>
+		
+  </body>
+</html>
