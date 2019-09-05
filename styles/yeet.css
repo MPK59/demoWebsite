@@ -26,6 +26,7 @@ div{
 	
 }
 .sidenav{
+	
 	position: fixed;
 	top:0px;
 	left:0px;
@@ -40,11 +41,11 @@ div{
 }
 .side-menu{
 	
-	position:relative;
+	
 	left:-10px;
 	overflow:visible;
 	color:white;
-	width:175px;
+	width:70%;
 	border: 10px solid white;
 	border-left-color:blue;
 	border-right-color:blue;
@@ -63,7 +64,7 @@ div{
 		background-color:white;
 		color:black;
 		position:absolute;
-		min-width:190px;
+		min-width:10px;
 		box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
 		text-decoration: none;
 		z-index:1;
@@ -115,4 +116,11 @@ div{
   margin-right: 25px;
   margin-left: 25px;
   background-color: white;
+}
+@media screen and (max-width: 800px) {
+	.sidenav{display:none;}
+	.sidenav:hover .side-conts .side-menu{
+	display:block;}
+	.main{left:5%;}
+}
 }

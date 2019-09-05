@@ -1,4 +1,4 @@
- var KEY     = { ESC: 27, SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40 },
+var KEY     = { ESC: 27, SPACE: 32, LEFT: 37, UP: 38, RIGHT: 39, DOWN: 40 },
       DIR     = { UP: 0, DOWN: 1, LEFT: 2, RIGHT: 3, OPPOSITE: [1, 0, 3, 2] },
       stats   = new Stats(),
       canvas  = document.getElementById('canvas'),
@@ -176,4 +176,3 @@
 
   reset();
   frame();
-
