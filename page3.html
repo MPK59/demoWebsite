@@ -3,19 +3,19 @@
 <head>
   <title>Brick Break</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="styles/brick_break.css" media="screen, print" rel="stylesheet" type="text/css" /> 
+  <meta name="viewport" content="width=device-width", initial-scale=1.0, user-scalable="no"/>
+  <link href="styles/brick_break.css" media="screen, print" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="styles/yeet.css" />
 </head> 
  
 <body> 
-<div class="sidenav">
+	<div class="sidenav">
 	<div class="side-conts">
 	<div class="logo"> " " </div>
-      <a href="index.html"><div class="side-menu">Home</div></a>
-      <a href="about.html"><div class="side-menu">About</div></a>
-      <div class="dropdown"><div class="side-menu">Services
-		
+	  <ul style="list-style-type:none;">
+		<a href="index.html"><li>Home</li></a>
+		<a href="about.html"><li>About</li></a>
+		<div class="dropdown"><li>Services
 			<div class="dropdown-conts">
 				<a href="page2.html"><ul>Snake Game</ul></a>
 			
@@ -25,14 +25,15 @@
 			
 				<ul><a href="page3.html">Brick Breaker</a></ul>
 			</div>
+		</li>
 		</div>
-	   </div>
-      <div class="side-menu">Pricing</div>
-      <div class="side-menu">Contact</div>
-      <div class="side-menu">Blog</div>
+		<li>Pricing</li>
+		<li>Contact</li>
+		<li>Blog</li>
+	  </ul>
 	</div>
     </div>
-<div class="main">
+
   <div id="brick_break">
     <canvas id="canvas">
       <div class='unsupported'>
@@ -60,7 +61,7 @@
       </div>
     </div>
   </div>
-</div>
+
   <script src="javascript/brick_game.js"></script>
   <script src="javascript/brick_break.js"></script>
   <script src="javascript/brick_levels.js"></script>

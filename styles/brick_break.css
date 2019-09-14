@@ -15,6 +15,7 @@ body {
 
 #brick_break {
   position: relative;
+  left:10%;
 }
 
 #canvas {

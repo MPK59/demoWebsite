@@ -11,11 +11,11 @@
   
 	<div class="sidenav">
 	<div class="side-conts">
-	<div class="logo"> " " </div>
-      <a href="index.html"><div class="side-menu">Home</div></a>
-      <a href="about.html"><div class="side-menu">About</div></a>
-      <div class="dropdown"><div class="side-menu">Services
-		
+	<div class="logo"> </div>
+	  <ul style="list-style-type:none;">
+		<a href="index.html"><li>Home</li></a>
+		<a href="about.html"><li>About</li></a>
+		<div class="dropdown"><li>Services
 			<div class="dropdown-conts">
 				<a href="page2.html"><ul>Snake Game</ul></a>
 			
@@ -25,45 +25,66 @@
 			
 				<ul><a href="page3.html">Brick Breaker</a></ul>
 			</div>
+		</li>
 		</div>
-	   </div>
-      <div class="side-menu">Pricing</div>
-      <div class="side-menu">Contact</div>	
-      <div class="side-menu">Blog</div>
+		<li>Pricing</li>
+		<li>Contact</li>
+		<li>Blog</li>
+	  </ul>
 	</div>
     </div>
 	<div class="nav">"Hello"</div>
 	<div class="main">
     <h1>Hello, World!</h1>
     <h4 id='date'></h4>
-	
-	<div class="image-section">
-      <div class="section-style">
-        <img src="https://source.unsplash.com/random/400x200" alt="" />
+	<div class="slideshow-cont">
+	<div class="image-section fade">
+      <!--<div class="section-style">-->
+	  <div class="numbertext">1/4</div>
+        <img src="art.png" style="width:100%" >
         <p>A random image courtesy of unsplash.com.</p>
-      </div>
+      <!--</div>-->
 	</div>
-      <div class="section-style">
-        <img src="https://source.unsplash.com/random/400x200" alt="" />
+	<div class="image-section fade">
+		<!--<div class="section-style">-->
+		<div class="numbertext">2/4</div>
+        <img src="https://source.unsplash.com/random/400x200" style="width:100%" alt="" >
         <p>A random image courtesy of unsplash.com.</p>
-      </div>
-    
+      <!--</div>-->
+    </div>
 	
-	<div class="image-section">
-      <div class="section-style">
-        <img src="https://source.unsplash.com/random/400x200" alt="" />
+	<div class="image-section fade">
+		<!--<div class="section-style">-->
+		<div class="numbertext">3/4</div>
+        <img src="https://source.unsplash.com/random/400x200" style="width:100%" alt="" >
         <p>A random image courtesy of unsplash.com.</p>
-      </div>
+      <!--</div>-->
+    </div>
 
-      <div class="section-style">
-        <img src="https://source.unsplash.com/random/400x200" alt="" />
+    <div class="image-section fade">
+		<!--<div class="section-style">-->
+		<div class="numbertext">4/4</div>
+        <img src="https://source.unsplash.com/random/400x200" style="width:100%" alt="" >
         <p>A random image courtesy of unsplash.com.</p>
-      </div>
+      <!--</div>-->
+    </div>
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>	
+	<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 	<p>Hello. Do you want to view <a href="page2.html">snake game</a> ?</p>
 	<p>Hello. Do you want to view <a href="page1.html">page 2</a> ?</p>
 	<p>Hello. Do you want to view <a href="page3.html">Brick Game</a> ?</p>
 	</div>
+	<script async src="./javascript/index.js"></script>
   </body>
-  <script async src="./javascript/index.js"></script>
+  
 </html>
