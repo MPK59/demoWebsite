@@ -56,7 +56,7 @@
 	<div class="image-section fade">
 		<!--<div class="section-style">-->
 		<div class="numbertext">3/4</div>
-        <img src="https://source.unsplash.com/random/400x200" style="width:100%" alt="" >
+        <img src="out.png" style="width:100%" alt="" >
         <p>A random image courtesy of unsplash.com.</p>
       <!--</div>-->
     </div>
@@ -69,16 +69,17 @@
       <!--</div>-->
     </div>
 		<!-- Next and previous buttons -->
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<a class="prev" id="prev">&#10094;</a>
+		<a class="next" id="next">&#10095;</a>
     </div>	
 	<br>
 
 <!-- The dots/circles -->
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" id="dot1" onclick="inc=1"></span>
+  <span class="dot" id="dot2" onclick="inc=2"></span>
+  <span class="dot" id="dot3" onclick="inc=3"></span>
+  <span class="dot" id="dot4" onclick="inc=4"></span>
 </div>
 	<p>Hello. Do you want to view <a href="page2.html">snake game</a> ?</p>
 	<p>Hello. Do you want to view <a href="page1.html">page 2</a> ?</p>
