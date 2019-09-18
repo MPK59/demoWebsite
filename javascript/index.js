@@ -73,3 +73,20 @@ else if(cSlide3.addEventListener("click", currentSlide, false)) slideIndex = sli
 else if(cSlide4.addEventListener("click", currentSlide, false)) slideIndex = slideIndex;
 else {slideIndex++; showSlides();}
 },4000);
+
+
+function showDrop(){
+	showSide();
+	var getDropdownConts = document.getElementById("dropdown-conts");
+	if(getDropdownConts.style.display != "block") getDropdownConts.style.display = "block";
+	else getDropdownConts.style.display = "none";
+}
+
+function showSide(){
+	var statSide = document.getElementById("sidenav");
+	statSide.classList.toggle("sidenavClick");
+	statSide = document.getElementById("logo");
+	statSide.classList.toggle("sidemenuClick");
+	statSide = document.getElementById("side-conts");
+	statSide.classList.toggle("sidemenuClick");
+}
