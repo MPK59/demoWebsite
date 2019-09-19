@@ -9,31 +9,31 @@
 </head> 
  
 <body> 
-	<div class="sidenav">
-	<div class="side-conts">
-	<div class="logo"> " " </div>
+	<div class="sidenav" id="sidenav" onclick="showSide()">
+	<div class="logo" id="logo"> </div>
+	<div class="side-conts" id="side-conts">
 	  <ul style="list-style-type:none;">
-		<a href="index.html"><li>Home</li></a>
-		<a href="about.html"><li>About</li></a>
-		<div class="dropdown"><li>Services
-			<div class="dropdown-conts">
-				<a href="page2.html"><ul>Snake Game</ul></a>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li class="dropdown" onclick="showDrop()">Services
+			<ul id="dropdown-conts" >
+				<li><a href="page2.html">Snake Game</a></li>
 			
 			
-				<ul><a href="page1.html">Page2</a></ul>
+				<li><a href="page1.html">Page2</a></li>
 			
 			
-				<ul><a href="page3.html">Brick Breaker</a></ul>
-			</div>
+				<li><a href="page3.html">Brick Breaker</a></li>
+			</ul>
 		</li>
-		</div>
-		<li>Pricing</li>
-		<li>Contact</li>
-		<li>Blog</li>
+		
+		<li><a href="pricing.html">Pricing</a></li>
+		<li><a href="content.html">Contact</a></li>
+		<li><a href="blog.html">Blog</a></li>
 	  </ul>
 	</div>
     </div>
-<div class="nav">
+	<div class="nav">
 	<ul>
 		<li><a href="index.html">Home</a></li>
 		<li><a href="page2.html">News</a></li>
@@ -41,6 +41,11 @@
 		<li><a href="about.html">About</a></li>
 	</ul>
 	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="main">
   <div id="brick_break">
     <canvas id="canvas">
       <div class='unsupported'>
@@ -68,7 +73,7 @@
       </div>
     </div>
   </div>
-
+</div>
   <script src="javascript/brick_game.js"></script>
   <script src="javascript/brick_break.js"></script>
   <script src="javascript/brick_levels.js"></script>

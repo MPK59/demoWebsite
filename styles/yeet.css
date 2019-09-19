@@ -23,15 +23,17 @@ div{
 	font-style:normal;
 }
 .sidenav{
-	position:relative;
+	position:fixed;
 	display:flex;
 	flex-flow:column;
 	width:5%;
-	min-height:100%;
+	min-height:328px;	
+	height:100%;
 	background-color: blue;
 	-webkit-transition: width 1s;
 	z-index:1;
 	float:left;
+	overflow:hidden;
 }
 .sidenav:hover{
 	width: 20%;
@@ -146,11 +148,11 @@ div{
 	display:inline-block;
 }
 .header{
-	display:block;
+	display:flex;
 	position:absolute;
+	width:95%;
 	top:5%;
 	left:5%;
-	
 }
 .main{
 	display:block;
@@ -158,8 +160,7 @@ div{
 	right:0%;
 	top:10%;
 	width:95%;
-	
-	min-height:85%;
+	height:90%;
 }
 * {box-sizing:border-box;margin:0px;}
 
@@ -215,6 +216,11 @@ img{
 	.logo{width:50px; height:50px;}
 	/*.nav{display:none;}*/
 }
+@media screen and (max-height:328px){
+	.sidenav{
+		position:relative;
+	}
+}
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -222,6 +228,7 @@ img{
   padding: 8px 12px;
   position: relative;
   top: 0;
+  float:right;
 }
 
 /* The dots/bullets/indicators */
@@ -260,17 +267,24 @@ img{
 }
 .footer{
 	display:block;
-	position:relative;
+	position:absolute;
+	top:100%;
+	width:100%;
 	background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
+  z-index:2;
+}
+a.active {
+  background-color: red;
 }
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
+  display: flex;
   clear: both;
  display:block;
  flex-flow:column;
+ height:100%;
  
 }
