@@ -89,4 +89,6 @@ function showSide(){
 	statSide.classList.toggle("sidemenuClick");
 	statSide = document.getElementById("side-conts");
 	statSide.classList.toggle("sidemenuClick");
+	statSide = document.getElementById("nav");
+	statSide.classList.toggle("navClick");
 }
