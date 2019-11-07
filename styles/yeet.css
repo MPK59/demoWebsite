@@ -48,7 +48,7 @@ div{
 	width:20%;
 	visibility:visible;
 }
-.sidenavClick ~.nav{
+.navClick{
 	width:80%;
 }
 .side-conts ul{
